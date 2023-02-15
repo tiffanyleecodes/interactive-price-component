@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="container">
+ 
+    <header>
+  <h1 style="font-size:1.3rem">Simple, traffic-based pricing</h1>
+  <p>Sign-up for our 30-day trial. No credit card required.</p>
+</header> 
+<main>
+  <div class="pageview">
+  <p><span class="pv">100</span> Pageviews</p>
+  
+</div>
+  <!-- progress bar -->
+  <div class="progress-bar">
+    <input type="range" min="0.00" max="4"  value="2" class="range">
+  <p>$<span class="cost">16</span><span>.00 </span><span class="time">/month</span></p>
+</div>
+
+
+  <!-- toggle switch -->
+  <div class="bill">
+  <p class="monthly" style="font-size:0.7rem; margin-right: 0.5rem;">Monthly Billing</p>
+  <label class="switch">
+    <input type="checkbox" class="check">
+    <span class="slider round"></span>
+  </label>
+  <p class="yearly" style="font-size:0.7rem; margin-left:0.5rem;">Yearly Billing</p>
+  <p class="discount mobile">-25%</p>
+  <p class="discount desktop">25% discount</p>
+  
+</div>
+
+  <div class="benefit" style="margin:1.5rem 0">
+    <div>
+  <p><img src="./images/icon-check.svg" alt="">Unlimited websites</p>
+  <p><img src="./images/icon-check.svg" alt="">100% data ownership</p>
+  <p><img src="./images/icon-check.svg" alt="">Email reports</p>
+  </div>
+
+  <button style="margin:1.5rem 0">Start my trial</button>
+</div>
+</main>
+  <footer>
+  <div class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+    <p>Coded by <a href="https://github.com/tiffanyleecodes">Tiffany Lee</a>.</p>
+  </div>
+</footer>
+</div>
+</body>
+</html>
